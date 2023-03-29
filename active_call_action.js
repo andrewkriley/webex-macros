@@ -19,7 +19,7 @@ function checkCallCount(amount) {
    }else if(amount == zeroCalls){
      console.log('DEBUG - Turn LED off');
      xapi.Command.UserInterface.LedControl.Color.Set({ Color: 'Off' });
-     console.log('DEBUG - Display RED webpage on screen');
+     console.log('DEBUG - Remove webpage on screen');
      xapi.command('UserInterface WebView Clear');
    }
 }
